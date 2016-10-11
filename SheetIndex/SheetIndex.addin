@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command SheetIndex</Text>
+    <Description>Some description for SheetIndex</Description>
+    <Assembly>SheetIndex.dll</Assembly>
+    <FullClassName>SheetIndex.Command</FullClassName>
+    <ClientId>20d476b8-b46f-427d-af3b-d6bc7a122751</ClientId>
+    <VendorId>Kirksey</VendorId>
+    <VendorDescription>Kirksey Architecture, http://kirksey.com</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application SheetIndex</Name>
+    <Assembly>SheetIndex.dll</Assembly>
+    <FullClassName>SheetIndex.App</FullClassName>
+    <ClientId>c1e7e579-9c9e-4e2e-9814-434b37c6fdd8</ClientId>
+    <VendorId>Kirksey</VendorId>
+    <VendorDescription>Kirksey Architecture, http://kirksey.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>
