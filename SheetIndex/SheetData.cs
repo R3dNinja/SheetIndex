@@ -663,8 +663,10 @@ namespace SheetIndex
 
         private void extractDisciplineByNumber()
         {
-            string temp = Regex.Replace(SheetNumber, @"[^\w\s]", "");
-            switch (temp)
+            //string temp = Regex.Replace(SheetNumber, .+?(?=\d), "");
+            string[] temp = Regex.Split(SheetNumber, @"\d");
+            //string temp = new String(SheetNumber.Where(Char.IsLetter).ToArray());
+            switch (temp[0])
             {
                 case "C":
                     this.Discipline = "CIVIL";
