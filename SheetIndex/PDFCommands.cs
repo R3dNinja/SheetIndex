@@ -441,12 +441,12 @@ namespace SheetIndex
         private string syncfusionOCR(string pdfFile)
         {
             string text;
-            using (OCRProcessor processor = new OCRProcessor(@"C:\ProgramData\Autodesk\REVIT\Addins\2015\kirksey\OCRProcessor\"))
+            using (OCRProcessor processor = new OCRProcessor(@"C:\ProgramData\Autodesk\REVIT\Addins\2017\kirksey\OCRProcessor\"))
             {
                 PdfLoadedDocument lDoc = new PdfLoadedDocument(pdfFile);
 
                 Bitmap img = lDoc.ExportAsImage(0);
-                text = processor.PerformOCR(img, @"C:\ProgramData\Autodesk\REVIT\Addins\2015\Kirksey\OCRProcessor\Tessdata\");
+                text = processor.PerformOCR(img, @"C:\ProgramData\Autodesk\REVIT\Addins\2017\Kirksey\OCRProcessor\Tessdata\");
                 lDoc.Close(true);
             }
             return text;
